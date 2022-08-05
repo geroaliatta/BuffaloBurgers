@@ -14,10 +14,13 @@ body{
     color: #F5F3F4;
     font-family: 'Roboto Mono', monospace;
     background-color: #a4161a;
+    background-image: linear-gradient(13deg, #a4161a 0%, #ba181b 50%, #000000 100%);
+
 }
 
 header{
     background-color: #000000;
+    background-image: url(media/backimg/black/black_mamba.png);
 }
 
 .logoTitulo{
@@ -47,6 +50,7 @@ nav ul{
     border: solid #E5383B;
     border-width: 10px 0px;
     font-size: 0;
+    background-image: url(media/backimg/light/sneaker_mesh_fabric.png);
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -68,6 +72,7 @@ main{
     background-color: #A4161A;
     padding-bottom: 100px;
     background-color: #a4161a;
+background-image: linear-gradient(13deg, #a4161a 0%, #ba181b 50%, #000000 100%);
 }
 
 footer{
@@ -75,6 +80,7 @@ footer{
     color: #BA181B;
     font-size: 20px;
     font-weight: 500;
+    background-image: url(media/backimg/light/brickwall.png);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -108,6 +114,7 @@ footer{
         list-style: none;
         border: solid #E5383B;
         border-width: 10px 0px;
+        background-image: url(media/backimg/light/sneaker_mesh_fabric.png);
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
@@ -228,6 +235,7 @@ footer{
     grid-area: articuloMenu1;
     color: #BA181B;
     background-color: #000000;
+    background-image: url(media/backimg/black/black_mamba.png);
 }
 
 .articuloMenu2{
@@ -244,6 +252,7 @@ footer{
     grid-area: articuloMenu4;
     color: #BA181B;
     background-color: #000000;
+    background-image: url(media/backimg/black/black_mamba.png);
 }
 
 .articuloMenu1 .imgMenu, .articuloMenu3 .imgMenu{
@@ -349,6 +358,7 @@ footer{
     align-items: center;
     padding-bottom: 100px;
     background-color: #000000;
+    background-image: url(media/backimg/black/black_mamba.png);
 }
 
 .dondeEstamos h3{
@@ -467,6 +477,22 @@ footer{
     border-radius: 10px;
 }
 
+.imgGrande{
+    transition: 1s;
+}
+
+.imgGrande:hover{
+    transform: scale(1.03);
+}
+
+.imgChica{
+    transition: 0.5s;
+}
+
+.imgChica:hover{
+    transform: scale(1.1);
+}
+
 /* FIN CSS GALERIA */
 
 /* INICIO CSS CONTACTO */
@@ -513,6 +539,7 @@ footer{
     text-align: center;
     padding: 30px 1px;
     background-color: #000000;
+    background-image: url(media/backimg/black/black_mamba.png);
 }
 
 .sectionExperiencia img{
@@ -527,6 +554,7 @@ footer{
     display: flex;
     flex-direction: column;
     background-color: #000000;
+    background-image: url(media/backimg/black/black_mamba.png);
 }
 
 .formulario2{
@@ -570,6 +598,7 @@ footer{
     padding: 20px 0;
     grid-area: experienciaImg;
     background-color: #000000;
+    background-image: url(media/backimg/black/black_mamba.png);
 }
 
 .experienciaImg img{
@@ -638,7 +667,7 @@ footer{
 
 
 .boton {
-    background-color: #870000;
+    background-image: linear-gradient(to right, #870000 0%, #190A05  51%, #870000  100%);
     width: 200px;
     margin: 10px;
     padding: 15px 45px;
@@ -649,6 +678,12 @@ footer{
     color: white;            
     border-radius: 10px;
     display: block;
+}
+
+.boton:hover {
+    background-position: right center; 
+    color: #fff;
+    text-decoration: none;
 }
 
 /* FIN CSS CONTACTO */
@@ -676,6 +711,7 @@ footer{
         list-style: none;
         border: solid #E5383B;
         border-width: 10px 0px;
+        background-image: url(media/backimg/light/sneaker_mesh_fabric.png);
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
@@ -785,6 +821,7 @@ footer{
     grid-area: articuloMenu1;
     color: #BA181B;
     background-color: #000000;
+    background-image: url(media/backimg/black/black_mamba.png);
 }
 
 .articuloMenu2{
@@ -801,6 +838,7 @@ footer{
     grid-area: articuloMenu4;
     color: #BA181B;
     background-color: #000000;
+    background-image: url(media/backimg/black/black_mamba.png);
 }
 
 .articuloMenu1 .imgMenu, .articuloMenu3 .imgMenu{
@@ -916,6 +954,7 @@ footer{
     align-items: center;
     padding-bottom: 100px;
     background-color: #000000;
+    background-image: url(media/backimg/black/black_mamba.png);
 }
 
 .dondeEstamos h3{
@@ -1047,6 +1086,22 @@ footer{
     border-radius: 10px;
 }
 
+.imgGrande{
+    transition: 1s;
+}
+
+.imgGrande:hover{
+    transform: scale(1.03);
+}
+
+.imgChica{
+    transition: 0.5s;
+}
+
+.imgChica:hover{
+    transform: scale(1.1);
+}
+
 /* FIN CSS GALERIA */
 
 }
@@ -1056,6 +1111,33 @@ footer{
 @media only screen and (min-width: 979px) {
 
 /* INICIO CSS GENERAL */
+
+    h1{
+        transition: all 0.5s;
+    }
+
+    h1:hover{
+        color: whitesmoke;
+        color: #000000;
+        font-family: 'Press Start 2P', cursive;
+        font-size: 5rem;
+        -webkit-text-stroke: 0.5px #BA181B;
+    }
+
+    li a{
+        transition: all 0.2s;
+    }
+
+    li a:hover{
+        color: #BA181B;
+        font-weight: 700;
+        font-size: 2rem;
+        border: none;
+        border-radius: 8%;
+        background-color: #000000;
+        background-image: url(media/backimg/black/black_mamba.png);
+    }
+
     main p{
         font-size: 1.2rem;
         text-align: center;
@@ -1085,8 +1167,14 @@ footer{
     
     .redes img{
         padding: 0 10px;
+        filter: grayscale(70%);
+        transition: all 0.5s;
     }
     
+    .redes img:hover{
+        transform: scale(1.10);
+        filter: grayscale(0%);
+    }
     
     .logoInstagram{
     width: 70px;
@@ -1098,8 +1186,14 @@ footer{
     
     .logoFooter{
         height: 130px;
+        filter: grayscale(70%);
+        transition: all 0.5s;    
     }
     
+    .logoFooter:hover{
+        filter: grayscale(0%);
+    }
+
 /* FIN CSS GENERAL */
 
 
@@ -1134,6 +1228,16 @@ footer{
     color: #161A1D;
     font-weight: 600;
     font-size: 1.8rem;
+    transition: all 0.5s;
+}
+.linkWhatsapp:hover{
+    font-weight: 700;
+    font-size: 1.9rem;
+    color: #BA181B;
+    border: none;
+    text-transform: uppercase;
+    background-color: #000000;
+    background-image: url(media/backimg/black/black_mamba.png);
 }
 
 /* FIN CSS HOME */
@@ -1151,6 +1255,12 @@ footer{
 
 .articuloMenu{
     background-color: #81171a;
+    transition: all 0.5s;
+}
+
+.articuloMenu:hover{
+    background-color: #000000;
+    background-image: url(media/backimg/black/black_mamba.png);
 }
 
 .articuloMenu1{
@@ -1184,6 +1294,14 @@ footer{
     align-items: center;
     justify-content: space-evenly;
     padding: 4rem 0;
+    filter: grayscale(100%);
+    transition: all 0.5s;
+}
+
+.divMenu:hover{
+    filter: grayscale(0%);
+    color: #A4161A;
+    font-weight: 700;
 }
 
 .divMenu4{
@@ -1224,6 +1342,13 @@ footer{
     padding-bottom: 2rem;
     font-size: 2rem;
     text-align: center;
+    transition: all 0.5s;
+}
+
+.incluyenPapas:hover{
+    background-color: #000000;
+    background-image: url(media/backimg/black/black_mamba.png);
+    color: #BA181B;
 }
 
 /* FIN CSS MENU */
@@ -1280,6 +1405,7 @@ footer{
     flex-direction: column;
     align-items: center;
     background-color: #000000;
+    background-image: url(media/backimg/black/black_mamba.png);
     width: 100%;
     height: 100%;
 }
@@ -1301,6 +1427,7 @@ footer{
     flex-direction: column;
     align-items: center;
     background-color: #000000;
+    background-image: url(media/backimg/black/black_mamba.png);
 }
 
 .rangoEntrega h3{
@@ -1415,6 +1542,22 @@ footer{
     border-radius: 10px;
 }
 
+.imgGrande{
+    transition: 1s;
+}
+
+.imgGrande:hover{
+    transform: scale(1.03);
+}
+
+.imgChica{
+    transition: 0.5s;
+}
+
+.imgChica:hover{
+    transform: scale(1.1);
+}
+
 /* FIN CSS GALERIA */
 
 /* INICIO CSS CONTACTO */
@@ -1424,6 +1567,15 @@ footer{
     color: white;
     font-size: 1.6rem;
     text-shadow: 0 0 1px black;
+}
+
+.submenuContacto li a:hover{
+    color: white;
+    font-weight: 700;
+    font-size: 26px;
+    border: none;
+    border-radius: 8%;
+    background: black;
 }
 
 .formExperiencia{
@@ -1561,6 +1713,7 @@ footer{
 
 .boton {
     background-color: #870000;
+    background-image: linear-gradient(to right, #870000 0%, #190A05  51%, #870000  100%);
     width: 200px;
     margin: 10px;
     padding: 15px 45px;
@@ -1571,6 +1724,12 @@ footer{
     color: white;            
     border-radius: 10px;
     display: block;
+}
+
+.boton:hover {
+    background-position: right center; 
+    color: #fff;
+    text-decoration: none;
 }
 
 /* FIN CSS CONTACTO */
