@@ -328,11 +328,6 @@ footer{
     display: inline-block;
     width: 90%;
     padding-top: 10px;
-    filter: grayscale(100%);
-}
-
-.imgMenu:focus{
-    filter: grayscale(0%);
 }
 
 .incluyenPapas{
