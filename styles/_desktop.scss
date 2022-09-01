@@ -165,43 +165,47 @@
             "articuloMenu3 articuloMenu4";
     }
 
-    .articuloMenu {
-        background-color: $rojo3;
-        transition: all 0.5s;
+    $mapaMenu: (
+        Menu1: $rojo3,
+        Menu2: $rojo4,
+        Menu3: $rojo5,
+        Menu4: $rojo6
 
-        &:hover {
-            background-color: $negro1;
-            background-image: $fondo2;
+    );
+
+
+    @each $menu, $rojo in $mapaMenu {
+        .articulo#{$menu} {
+            grid-area: articulo#{$menu};
+            background-color: $rojo;
+            transition: all 0.5s;
+
+            &:hover {
+                background-color: $negro1;
+                background-image: $fondo2;
+            }
         }
+        
     }
 
-    .articuloMenu1 {
-        grid-area: articuloMenu1;
+    @mixin imgMenu ($border, $display, $width){
+        border-radius: $border;
+        display: $display;
+        width: $width;
     }
 
-    .articuloMenu2 {
-        background-color: $rojo4;
-        grid-area: articuloMenu2;
-    }
-
-    .articuloMenu3 {
-        grid-area: articuloMenu3;
-    }
-
-    .articuloMenu4 {
-        background-color: $rojo4;
-        grid-area: articuloMenu4;
-    }
-
+    
     .articuloMenu1 .imgMenu,
     .articuloMenu3 .imgMenu {
-        border-radius: 25% 10%;
+        @include imgMenu(25% 10%, inline-block, 400px)
+        
     }
 
     .articuloMenu2 .imgMenu,
     .articuloMenu4 .imgMenu {
-        border-radius: 10% 25%;
+        @include imgMenu(10% 25%, inline-block, 400px)
     }
+
 
     .divMenu {
         display: flex;
@@ -218,16 +222,19 @@
         }
     }
 
-
-    .divMenu4 {
+    @mixin divMenu {
         display: flex;
         flex-direction: row-reverse;
+    }
+
+    .divMenu4 {
+        @include divMenu;
     }
 
     .divMenu3 {
-        display: flex;
-        flex-direction: row-reverse;
+        @include divMenu;
     }
+
 
     .divMenuTexto {
         display: inline-block;
@@ -247,10 +254,7 @@
         font-size: 1.2rem;
     }
 
-    .imgMenu {
-        display: inline-block;
-        width: 400px;
-    }
+    
 
     .incluyenPapas {
         padding-top: 2rem;
@@ -280,20 +284,12 @@
         justify-items: center;
         align-items: center;
         grid-row-gap: 100px;
-
-        h3 {
-            font-size: 1.8rem;
-        }
     }
 
     .quienesSomos {
         grid-area: quienesSomos;
         text-align: center;
         margin: 2rem 5rem;
-
-        h3 {
-            padding-bottom: 35px;
-        }
 
         p {
             padding: 10px;
@@ -329,11 +325,6 @@
         background-image: $fondo2;
         width: 100%;
         height: 100%;
-
-        h3 {
-            padding: 25px 0;
-            margin-bottom: 1rem;
-        }
     }
 
     .mapa {
@@ -351,11 +342,6 @@
         background-color: $negro1;
         background-image: $fondo2;
 
-        h3 {
-            padding: 25px 0;
-            margin-bottom: 1rem;
-        }
-
         img {
             width: 500px;
             border-radius: 25px;
@@ -366,6 +352,17 @@
             padding: 25px 0;
         }
     } 
+
+    .h3Nosotros {
+        font-size: 1.8rem;
+        padding: 25px 0;
+        margin-bottom: 1rem;
+    }
+
+    .h3Nosotros--variacion{
+        @extend .h3Nosotros;
+        color: $rojo2;
+    }
 
     // INICIO CSS GALERIA
 
@@ -558,7 +555,7 @@
     }
 
     .contenedorImgBuffalo {
-        // background-image: url(../media/backimg/fondobuffalo.png);
+        background-image: url(../media/backimg/fondobuffalo.png);
         background-repeat: repeat-x;
         background-size: 50%;
     }
@@ -666,10 +663,6 @@
         "rangoEntrega"; 
         justify-items: center;
         align-items: center;
-
-        h3{
-            font-size: 1.8rem;
-        }
     }
     
     .imgNosotros{
@@ -693,12 +686,6 @@
         padding-bottom: 100px;
         background-color: #000000;
         background-image: url(media/backimg/black/black_mamba.png);
-
-        h3{
-            padding-bottom: 0px;
-            margin-bottom: 1rem;
-            text-align: center;
-        }
     }
     
     
@@ -725,16 +712,15 @@
         p{
             width: 80%;
         }
-
-        h3{
-            margin-bottom: 1rem;
-            text-align: center;
-        }
     }
     
     .quienesSomos h4{
         text-align: center;
         font-size: 1.5rem;
+    }
+
+    .h3Nosotros--variacion{
+        color: $blanco1;
     }
     
 }
