@@ -97,13 +97,14 @@
 
     .textoHome {
         padding-bottom: 40px;
+        width: 80%;
     }
 
     .videoHome {
         border-radius: 25% 10%;
         border-radius: 30% 20% / 10% 30%;
         height: auto;
-        width: 100%;
+        width: 80%;
     }
 
     .linkWhatsapp {
@@ -112,6 +113,29 @@
         font-weight: 700;
         font-size: 1.5rem;
         text-transform: uppercase;
+    }
+
+    .sectionIndex2{
+        margin-top: 50px;
+        padding: 0px 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .pedidosYa{
+        width: 200px;
+        border-radius: 20% 50%;
+    }
+
+    .carousel{
+        width: 80%;
+    }
+
+    .d-block{
+        border-radius: 25% 10%;
+        border-radius: 30% 20% / 10% 30%;
     }
 
 

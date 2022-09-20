@@ -206,6 +206,25 @@ footer {
     font-size: 1.4rem;
     text-transform: uppercase;
   }
+  .sectionIndex2 {
+    margin-top: 50px;
+    padding: 0px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .pedidosYa {
+    width: 180px;
+    border-radius: 20% 50%;
+  }
+  .carousel {
+    width: 100%;
+  }
+  .d-block {
+    border-radius: 25% 10%;
+    border-radius: 30% 20%/10% 30%;
+  }
   .sectionMenu {
     display: grid;
     grid-template-columns: 1fr;
@@ -479,6 +498,9 @@ footer {
     align-items: center;
     font-size: 1rem;
   }
+  .archivoTrabajo {
+    width: 200px;
+  }
   .imgTrabajo {
     grid-area: imgTrabajo;
     display: none;
@@ -581,12 +603,13 @@ footer {
   }
   .textoHome {
     padding-bottom: 40px;
+    width: 80%;
   }
   .videoHome {
     border-radius: 25% 10%;
     border-radius: 30% 20%/10% 30%;
     height: auto;
-    width: 100%;
+    width: 80%;
   }
   .linkWhatsapp {
     text-decoration: none;
@@ -594,6 +617,25 @@ footer {
     font-weight: 700;
     font-size: 1.5rem;
     text-transform: uppercase;
+  }
+  .sectionIndex2 {
+    margin-top: 50px;
+    padding: 0px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .pedidosYa {
+    width: 200px;
+    border-radius: 20% 50%;
+  }
+  .carousel {
+    width: 80%;
+  }
+  .d-block {
+    border-radius: 25% 10%;
+    border-radius: 30% 20%/10% 30%;
   }
   .sectionMenu {
     display: grid;
@@ -1067,6 +1109,25 @@ footer {
     text-transform: uppercase;
     background-color: #0B090A;
     background-image: url(../media/backimg/black/black_mamba.png);
+  }
+  .sectionIndex2 {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+  }
+  .pedidosYa {
+    width: 300px;
+    border-radius: 20% 50%;
+  }
+  .carousel {
+    width: 45%;
+    min-width: 520px;
+  }
+  .d-block {
+    border-radius: 25% 10%;
+    border-radius: 30% 20%/10% 30%;
   }
   .sectionMenu {
     display: grid;
